@@ -241,8 +241,6 @@ class TouchScreenChar : public TouchScreenText {
 ----------------------------------------------------------------
 */
 
-// Global variable for password.  Password library requires variable to be global.
-Password thePassword = Password("1234"); // Sets the password
 
 ///@class TouchScreenKeypad
 ///@brief Class for handling all the TFT Touch Screen keypad functions
@@ -274,17 +272,6 @@ class TouchScreenKeypad {
     ///@brief Clears the textblock and resets the cursor to the original position.
     void clearTextBlock();
 
-    /**
-    @brief Sets the password for the TouchScreen keypad
-    @param myPassword   The new password that is to be set.
-    */
-    void setPassword(char* myPassword);
-
-    ///@brief Clears the screen, resets the cursor and resets the password
-    void resetPassword();
-
-    ///@brief Clears screen and evalulates the password.
-    void enterPassword();
  private:
     Button button[12];
     TouchScreenChar buttonText[12];

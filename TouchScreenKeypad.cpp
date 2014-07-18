@@ -305,6 +305,31 @@ void TouchScreenKeypad::clearTextBlock()
     xCursor = 20;
 }
 
+void TouchScreenKeypad::setPassword(char* myPassword)
+{
+    thePassword.set(myPassword);
+}
+
+void TouchScreenKeypad::resetPassword()
+{
+    clearTextBlock();
+    thePassword.reset();
+    delay(100);
+}
+
+void TouchScreenKeypad::enterPassword()
+{
+    clearTextBlock();
+    if (thePassword.evaluate())
+        Tft.drawString("Success", 70, 25, 2, WHITE);
+    else
+        Tft.drawString("Wrong", 80, 25, 2, WHITE);
+    delay(1000);
+    thePassword.reset();
+    clearTextBlock();
+}
+
+
 
 
 

@@ -1,7 +1,13 @@
-/*
-  TouchScreenKeypad.h - Library for creating the touch screen keypad for the Seeed Studio TFT Touch Screen (Version 1).
-  21 June 2014: Created by Richard Kirkpatrick
-*/
+/*! \mainpage My Personal Index Page
+ *
+ * \section intro_sec Introduction
+ * Author: Richard Kirkpatrick
+ *
+ * This is the Arduino library for creating a keypad for the Seeed Studio TFT touch screen (Version 1).
+ * The user can set a password through the main Arduino file.
+ * See the Wiki documentation page for more info!
+ *
+ */
 
 #ifndef TouchScreenKeypad_h
 #define TouchScreenKeypad_h
@@ -39,7 +45,6 @@ public:
     @param  otherTouchScreenText The text that is to be copied.
     */
     TouchScreenText(TouchScreenText& otherTouchScreenText);
-
 
     /*!
     @brief Parameter constructor for the TouchScreenText superclass
@@ -96,9 +101,9 @@ public:
     const int getTextColor();
 
 protected:
-  int xstart, ystart; ///< Coordinates of the text
-  int fontSize; ///< Size of the text
-  unsigned int textColor; ///< Color of the text
+  int xstart, ystart; /// Coordinates of the text
+  int fontSize; /// Size of the text
+  unsigned int textColor; /// Color of the text
 };
 
 /*
@@ -112,10 +117,7 @@ protected:
 */
 class TouchScreenString : public TouchScreenText {
  public:
-    /*!
-    @brief Default constructor for the TouchScreenString subclass.
-    @param  text The text that is to be drawn.
-    */
+    ///@brief Default constructor for the TouchScreenString subclass.
     TouchScreenString();
 
     /*!
@@ -257,11 +259,11 @@ class TouchScreenKeypad {
     void displayButton(const int userInput);
 
     /**
-    @brief Gets the button number that was pressed
+    @brief Gets the button number that was pressed.  Returns -1 if no button was pressed.
     @param  xInput   The x-coordinate of the user's input.
     @param  yInput   The y-coordinate of the user's input.
     */
-    int getButton(int xInput, int yInput);
+    int getButtonNumber(int xInput, int yInput);
 
     /**
     @brief Displays the text to the screen

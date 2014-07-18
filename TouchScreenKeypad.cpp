@@ -270,7 +270,7 @@ void TouchScreenKeypad::displayButton(const int userInput)
   }
 }
 
-int TouchScreenKeypad::getButton(int xInput, int yInput)
+int TouchScreenKeypad::getButtonNumber(int xInput, int yInput)
 {
     for (int i = 0; i < 12; i++) {
         if ((xInput > button[i].getXStart() && xInput < button[i].getXEnd())

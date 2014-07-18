@@ -1,0 +1,93 @@
+\hypertarget{class_touch_screen_keypad}{\section{Touch\+Screen\+Keypad Class Reference}
+\label{class_touch_screen_keypad}\index{Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}}
+}
+
+
+Class for handling all the T\+F\+T Touch Screen keypad functions.  
+
+
+
+
+{\ttfamily \#include $<$Touch\+Screen\+Keypad.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_touch_screen_keypad_a607f12b597d5abcf58c68fa0b872c27f}{\hyperlink{class_touch_screen_keypad_a607f12b597d5abcf58c68fa0b872c27f}{Touch\+Screen\+Keypad} ()}\label{class_touch_screen_keypad_a607f12b597d5abcf58c68fa0b872c27f}
+
+\begin{DoxyCompactList}\small\item\em Default constructor for the Keypad class. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_keypad_ab6f5683d6144923d22cdc1557a04e505}{void \hyperlink{class_touch_screen_keypad_ab6f5683d6144923d22cdc1557a04e505}{draw\+Keypad} ()}\label{class_touch_screen_keypad_ab6f5683d6144923d22cdc1557a04e505}
+
+\begin{DoxyCompactList}\small\item\em Draws the keypad to the scree. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_keypad_ae7626db736c68860f729e2b19717df9b}{display\+Button} (const int user\+Input)
+\begin{DoxyCompactList}\small\item\em Highlights the button when pressed. \end{DoxyCompactList}\item 
+int \hyperlink{class_touch_screen_keypad_ac9137abd620f43f4da11f7c17b124a68}{get\+Button\+Number} (int x\+Input, int y\+Input)
+\begin{DoxyCompactList}\small\item\em Gets the button number that was pressed. Returns -\/1 if no button was pressed. \end{DoxyCompactList}\item 
+void \hyperlink{class_touch_screen_keypad_af5e2d766c059dd50677f834980836bae}{display\+Text} (char button\+Text)
+\begin{DoxyCompactList}\small\item\em Displays the text to the screen. \end{DoxyCompactList}\item 
+\hypertarget{class_touch_screen_keypad_ac917770c7b791c5d5277eb65e15ed785}{void \hyperlink{class_touch_screen_keypad_ac917770c7b791c5d5277eb65e15ed785}{clear\+Text\+Block} ()}\label{class_touch_screen_keypad_ac917770c7b791c5d5277eb65e15ed785}
+
+\begin{DoxyCompactList}\small\item\em Clears the textblock and resets the cursor to the original position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for handling all the T\+F\+T Touch Screen keypad functions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_touch_screen_keypad_ae7626db736c68860f729e2b19717df9b}{\index{Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}!display\+Button@{display\+Button}}
+\index{display\+Button@{display\+Button}!Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}}
+\subsubsection[{display\+Button}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Keypad\+::display\+Button (
+\begin{DoxyParamCaption}
+\item[{const int}]{user\+Input}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_keypad_ae7626db736c68860f729e2b19717df9b}
+
+
+Highlights the button when pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Input} & The button that was selected by the user. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_keypad_af5e2d766c059dd50677f834980836bae}{\index{Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}!display\+Text@{display\+Text}}
+\index{display\+Text@{display\+Text}!Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}}
+\subsubsection[{display\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void Touch\+Screen\+Keypad\+::display\+Text (
+\begin{DoxyParamCaption}
+\item[{char}]{button\+Text}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_keypad_af5e2d766c059dd50677f834980836bae}
+
+
+Displays the text to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+Text} & The text for the button \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_touch_screen_keypad_ac9137abd620f43f4da11f7c17b124a68}{\index{Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}!get\+Button\+Number@{get\+Button\+Number}}
+\index{get\+Button\+Number@{get\+Button\+Number}!Touch\+Screen\+Keypad@{Touch\+Screen\+Keypad}}
+\subsubsection[{get\+Button\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Touch\+Screen\+Keypad\+::get\+Button\+Number (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Input, }
+\item[{int}]{y\+Input}
+\end{DoxyParamCaption}
+)}}\label{class_touch_screen_keypad_ac9137abd620f43f4da11f7c17b124a68}
+
+
+Gets the button number that was pressed. Returns -\/1 if no button was pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Input} & The x-\/coordinate of the user's input. \\
+\hline
+{\em y\+Input} & The y-\/coordinate of the user's input. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Touch\+Screen\+Keypad.\+h\item 
+Touch\+Screen\+Keypad.\+cpp\end{DoxyCompactItemize}

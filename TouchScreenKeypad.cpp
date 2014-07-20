@@ -235,7 +235,7 @@ void TouchScreenKeypad::drawKeypad()
     const int yendButton[] = {115, 177, 239, 301};      // y-min for keypads
     const int xstartButtonText[] = {35, 115, 195};      // x-coordinate for keypad numbers
     const int ystartButtonText[] = {85, 145, 209, 271}; // y-coordinate for keypad numbers
-    const int widthButton = 45;
+    const int widthButton = 50;
     const int heightButton = widthButton;
     char textKeypad[] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', 'C', '0', 'E'}; // Text for the buttons
 
@@ -250,7 +250,7 @@ void TouchScreenKeypad::drawKeypad()
         for(int x = 0; x < noColumns; x++) {
             int buttonNumber = noColumns * y + x;
             button[buttonNumber].setValues(xstartButton[x], ystartButton[y], widthButton, heightButton);
-            buttonText[buttonNumber].setValues(textKeypad[noColumns * y + x], xstartButtonText[x], ystartButtonText[y], 1, WHITE);
+            buttonText[buttonNumber].setValues(textKeypad[buttonNumber], xstartButtonText[x], ystartButtonText[y], 1, WHITE);
     }
   }
 
